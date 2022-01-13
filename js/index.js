@@ -110,7 +110,7 @@ function showcross() {
     C.style.display = 'block';
 }
 function ran() {
-    return Math.floor(Math.random() * 5);
+    return Math.floor(Math.random() * 5) * (Math.round(Math.random() * 2 - 1) * -1);
 }
 function makeLine(geo, color, lineWidth = 10, opacity = 1) {
     const g = new MeshLine();
